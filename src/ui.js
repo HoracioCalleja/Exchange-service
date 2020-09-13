@@ -6,7 +6,7 @@ const d = document,
   $rates = d.querySelector(".exchange-rate");
 
 function updateExchanges() {
-  $loader.innerHTML = `<img src="../assets/tail-spin.svg" />`;
+  $loader.innerHTML = `<img src="./assets/tail-spin.svg" />`;
   $rates.textContent = "";
 }
 
