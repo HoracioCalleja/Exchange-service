@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <title>Exchange service</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <div class="conainer-fluid text-center">
+    <header class="py-5 header bg-primary ">
+      <h1 class="display-3">Exchange service</h1>
+    </header>
+  </div>
+
+  <div class="container-fluid container-form">
+    <div class="row text-center">
+      <div class="col-sm-12  col-lg-4 my-2 form-group">
+        <form action="#" class="exchange-form">
+          <label for="bases" class="my-3  h3">Choose base:</label>
+          <select class="custom-select " id="bases" name="bases" aria-label="" required></select>
+          <label for="date" class="my-3 col-12 h3 ">Date: </label>
+          <input type="date" class="col-12 "  min="1999-01-04" name="date" id="date" required />
+          <input type="submit" value="Send" class="btn btn-dark mt-3 mb-2 p-2 col-12" />
+        </form>
+      </div>
+
+          <div class="col-sm-12 col-lg-8 exchanges">
+            <h2 class="loader"></h2>
+            <ul class="exchange-rate list-group">
+            </ul>
+        </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script type="module" src="src/index.js"></script>
+</body>
+
+</html>
